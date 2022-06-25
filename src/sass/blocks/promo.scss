@@ -1,0 +1,25 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/promo.jpg') no-repeat 50%/cover;
+    padding-top: 205px;
+
+    &__wraper {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        color: #000000;
+        text-decoration: none;
+
+        &:hover {
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+}
