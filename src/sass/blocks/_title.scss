@@ -14,6 +14,27 @@
         font-size: 16px;
         line-height: 24px;
         z-index: 1;
+        font-weight: 700;
         @include before_circle
+    }
+
+    &__fz36 {
+        font-size: 36px;
+        line-height: 60px;
+        margin-top: 6px;
+        margin-bottom: 24px;
+    }
+
+    &__descr {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+
+    }
+
+    &__fz12 {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px
     }
 }

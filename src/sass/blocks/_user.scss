@@ -1,0 +1,39 @@
+.user {
+
+    padding-top: 115px;
+
+    &__grid {
+
+        display: grid;
+        grid-template-columns: 400px 570px;
+        grid-template-rows: 300px 300px;
+        grid-auto-columns: auto;
+        column-gap: 68px;
+        grid-template-areas: 'img nam''img skils';
+
+    }
+
+    #img {
+        grid-area: img;
+    }
+
+    #name {
+        grid-area: nam;
+    }
+
+    #skils {
+        grid-area: skils;
+    }
+
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__skils {
+        display: grid;
+        grid-template-columns: repeat(2, 260px);
+        grid-template-rows: repeat(2, 1fr)
+    }
+}
