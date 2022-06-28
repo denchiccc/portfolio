@@ -6,9 +6,10 @@
 
         display: grid;
         grid-template-columns: 400px 570px;
-        grid-template-rows: 300px 300px;
-        grid-auto-columns: auto;
+        grid-template-rows: minmax(240px, auto) minmax(300px, auto);
+        grid-auto-rows: minmax(240px, auto);
         column-gap: 68px;
+        row-gap: 40px;
         grid-template-areas: 'img nam''img skils';
 
     }
@@ -33,7 +34,30 @@
 
     &__skils {
         display: grid;
-        grid-template-columns: repeat(2, 260px);
-        grid-template-rows: repeat(2, 1fr)
+        grid-template-columns: repeat(2, 230px);
+        grid-template-rows: minmax(100px, auto) minmax(100px, auto);
+        justify-content: space-between;
+        padding-left: 40px;
     }
+
+    &__skils_wrap {
+        position: relative;
+        padding-left: 40px;
+
+    }
+
+    &__skils_img {
+        position: absolute;
+        display: block;
+        width: 25px;
+        left: -22px;
+        top: 16px;
+
+
+    }
+
+    #user_mobil {
+        width: 15px;
+    }
+
 }
