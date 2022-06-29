@@ -11,6 +11,22 @@
         align-items: center;
     }
 
+    &__title {
+        position: relative;
+        // @include before_circle;
+
+        &:before {
+            top: 50%;
+            left: -12px;
+            transform: translateY(-50%);
+        }
+    }
+
+    .promo__subtitle {
+        margin-top: 9px;
+        margin-bottom: 25px;
+    }
+
     &__link {
         font-weight: 700;
         font-size: 14px;

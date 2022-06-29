@@ -1,0 +1,45 @@
+.resume {
+    padding-top: 120px;
+
+    &__title {
+        text-align: center;
+
+        &::before {
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    }
+
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        margin-top: 6px;
+        margin-bottom: 24px;
+        @include after_circle_user;
+
+        &::after {
+
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__wrap {
+        padding: 60px 65px 60px 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 417px);
+        column-gap: 136px;
+    }
+
+    &__column-title {
+
+        &::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+}

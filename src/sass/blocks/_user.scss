@@ -2,6 +2,20 @@
 
     padding-top: 115px;
 
+    &__title {
+        @include after_circle;
+    }
+
+    &__title-about {
+        position: relative;
+        // @include before_circle;
+
+        &:before {
+            top: -6px;
+            left: -15px;
+        }
+    }
+
     &__grid {
 
         display: grid;
@@ -43,7 +57,11 @@
     &__skils_wrap {
         position: relative;
         padding-left: 40px;
+        // @include before_circle;
 
+        &:before {
+            left: -40px;
+        }
     }
 
     &__skils_img {
@@ -54,6 +72,10 @@
         top: 16px;
 
 
+    }
+
+    &__skils_title {
+        position: relative;
     }
 
     #user_mobil {

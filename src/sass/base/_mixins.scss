@@ -6,26 +6,11 @@
         position: absolute;
         background: $main-color;
         border-radius: 100%;
-        top: 50%;
-        left: -12px;
-        transform: translateY(-50%);
         z-index: -1;
     }
 }
 
-@mixin before_circle_user {
-    &::before {
-        content: '';
-        width: 36px;
-        height: 36px;
-        position: absolute;
-        background: $main-color;
-        border-radius: 100%;
-        top: 0;
-        left: -80px;
-        z-index: -1;
-    }
-}
+
 
 @mixin after_circle_user {
     &::after {
@@ -35,7 +20,7 @@
         border: 2px solid $main-color;
         position: absolute;
         left: 0;
-        bottom: -7px;
+        bottom: -25px;
 
     }
 }

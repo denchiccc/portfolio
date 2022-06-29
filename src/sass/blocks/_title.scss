@@ -5,34 +5,34 @@
     &__fz48 {
         font-size: 48px;
         line-height: 60px;
-        margin-top: 9px;
-        margin-bottom: 25px;
+
     }
 
     &__fz36 {
-        position: relative;
+
         font-size: 36px;
         line-height: 60px;
-        margin-top: 6px;
-        margin-bottom: 24px;
-        @include after_circle_user
+
+
+    }
+
+    &__fz20 {
+        font-size: 20px;
+        line-height: 30px;
     }
 
     &__fz16 {
-        font-weight: 700;
-        position: relative;
         font-size: 16px;
         line-height: 24px;
-        z-index: 1;
-        @include before_circle
+
+
     }
 
     &__fz14 {
-        position: relative;
-        font-weight: 700;
+
         font-size: 14px;
         line-height: 21px;
-        @include before_circle_user;
+
 
     }
 
