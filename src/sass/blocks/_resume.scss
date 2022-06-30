@@ -2,7 +2,9 @@
     padding-top: 120px;
 
     &__title {
+        position: relative;
         text-align: center;
+        @include before_circle;
 
         &::before {
             top: 10px;
@@ -20,7 +22,7 @@
         @include after_circle_user;
 
         &::after {
-
+            bottom: -25px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -35,10 +37,80 @@
 
     &__column-title {
 
+        padding-left: 50px;
+        position: relative;
+
         &::before {
             content: '';
+            position: absolute;
             width: 15px;
             height: 15px;
+            background-color: $main-color;
+            border-radius: 100%;
+            left: -7px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+    }
+
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: -16px;
+            left: 0;
+            background-color: #000000;
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 1px;
+            width: 49px;
+            position: absolute;
+            background-color: #000000;
+            top: 63px;
+        }
+
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+            margin: 0;
+
+            h4 {
+                margin: 0;
+            }
+        }
+
+        &-body {
+            padding: 0 0 0 43px;
+            margin-top: 12px;
+        }
+
+        &-icon {
+            position: absolute;
+            left: 65px;
+            top: 60px;
+
+            @include before_circle;
+
+            &:before {
+                top: -14px;
+                left: -16px;
+            }
         }
     }
 

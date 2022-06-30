@@ -3,12 +3,14 @@
     padding-top: 115px;
 
     &__title {
-        @include after_circle;
+        position: relative;
+        @include after_circle_user;
+
     }
 
     &__title-about {
         position: relative;
-        // @include before_circle;
+        @include before_circle;
 
         &:before {
             top: -6px;
@@ -57,7 +59,7 @@
     &__skils_wrap {
         position: relative;
         padding-left: 40px;
-        // @include before_circle;
+        @include before_circle;
 
         &:before {
             left: -40px;
