@@ -1,39 +1,37 @@
 .sidepanel {
     position: fixed;
     display: flex;
-    height: 330px;
-    flex-direction: column;
+    width: 330px;
     justify-content: space-between;
     align-items: center;
-    left: 50px;
+    left: -90px;
     top: 220px;
     z-index: 3;
+    transform: rotate(90deg);
 
     &__text {
-        width: 25px;
-        height: 150px;
+        width: 145px;
+        height: 25px;
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
         color: #000000;
+        transform: rotate(180deg);
 
-        span {
-            width: 150px;
-            display: block;
-            transform: rotate(-90deg) translate(-40%, -260%);
-
-        }
     }
 
 
     &__devader {
-        width: 2px;
-        height: 70px;
+        width: 70px;
+        height: 2px;
         background-color: #000000;
 
     }
 
     &__link {
+        img {
+            transform: rotate(-90deg);
+        }
 
         img:active {
             transform: scale(1.2);

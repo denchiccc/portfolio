@@ -1,0 +1,51 @@
+.techno {
+    padding-top: 60px;
+
+    &__title {
+        position: relative;
+        text-align: center;
+        margin-bottom: 6px;
+        @include before_circle;
+
+        &::before {
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    }
+
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        margin-bottom: 85px;
+        @include after_circle_user;
+
+        &::after {
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    &__grid {
+        padding: 0px 11px 0px 11px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(270px, auto) minmax(270px, auto);
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+    }
+
+    &__wrap {
+        padding: 30px 30px 25px 30px;
+        border: 1px solid black;
+
+        &-title {
+            margin: 20px 0px 15px 0px;
+        }
+    }
+
+
+}

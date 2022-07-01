@@ -65,7 +65,7 @@
         &::after {
             content: '';
             width: 1px;
-            height: 100%;
+            height: calc(100% + 16px);
             position: absolute;
             top: -16px;
             left: 0;

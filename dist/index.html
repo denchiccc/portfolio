@@ -49,13 +49,15 @@
 </head>
 
 <body>
+
+
     <!-- ! start sidepanel -->
     <aside class="sidepanel">
         <a href="#" class="sidepanel__link"><img src="icons/social/facebook.svg" alt="Facebook"></a>
         <a href="#" class="sidepanel__link"><img src="icons/social/instagram.svg" alt="instagram"></a>
         <a href="#" class="sidepanel__link"><img src="icons/social/github.svg" alt="github"></a>
         <div class="sidepanel__devader"></div>
-        <div class="sidepanel__text"><span>Социальные сети</span></div>
+        <div class="sidepanel__text lng-sidepanel"><span>Социальные сети</span></div>
     </aside>
     <!-- ! end sidepanel -->
 
@@ -122,14 +124,21 @@
 
     <!-- ! start promo -->
     <section class="promo">
+        <!-- ! start lang -->
+        <select class="change-lang">
+            <option value="ua">UA</option>
+            <option value="ru" selected>RU</option>
+            <option value="en">EN</option>
+        </select>
+        <!-- ! end lang -->
         <div class="humburger">
             <span></span>
             <span class="long"></span>
             <span></span>
         </div>
         <div class="contianer">
-            <div class="title title__fz16 promo__title">Меня зовут Денис Юрченко</div>
-            <h1 class="title title__fz48 promo__subtitle">Я web-разработчик <br> из города Москва</h1>
+            <div class="title title__fz16 promo__title lng-unit">Меня зовут Денис Юрченко</div>
+            <h1 class="title title__fz48 promo__subtitle lng-subtitle">Я web-разработчик из города Херсон</h1>
             <div class="promo__wraper">
                 <a href="#" class="promo__link btn">Портфолио</a>
                 <a href="#" class="promo__link">Про меня</a>
@@ -233,7 +242,7 @@
                             <div class="resume__item">
                                 <div class="resume__item-head">
                                     <div class="resume__item-icon">
-                                        <img src="icons/experience/university.svg" alt="university">
+                                        <img src="icons/experience/courses.svg" alt="courses">
                                     </div>
                                     <h4 class="title title__fz14">Udemy</h4>
                                     <div class="title title__fz12 resume__icon-locetion">Курсы по Web-разработке</div>
@@ -255,7 +264,7 @@
                             <div class="resume__item">
                                 <div class="resume__item-head">
                                     <div class="resume__item-icon">
-                                        <img src="icons/experience/university.svg" alt="university">
+                                        <img src="icons/experience/developer.svg" alt="developer">
                                     </div>
                                     <h4 class="title title__fz14">Front-End Developer</h4>
                                     <div class="title title__fz12 resume__icon-locetion">EPAM | Москва (2018-2019)</div>
@@ -271,7 +280,7 @@
                             <div class="resume__item">
                                 <div class="resume__item-head">
                                     <div class="resume__item-icon">
-                                        <img src="icons/experience/university.svg" alt="university">
+                                        <img src="icons/experience/designer.svg" alt="designer">
                                     </div>
                                     <h4 class="title title__fz14">UI/UX Designer</h4>
                                     <div class="title title__fz12 resume__icon-locetion">Squad Team | Москва (2018)
@@ -293,7 +302,71 @@
     </section>
     <!-- ! end resume -->
 
+    <!-- ! start techno -->
+    <section class="techno">
+        <div class="contianer">
+            <div class="title title__fz16 techno__title">Навыки</div>
+            <div class="title title__fz36 techno__subtitle">Что я использую в работе</div>
+            <div class="techno__grid">
+                <div class="techno__wrap">
+                    <img src="icons/skills/html5.svg" alt="html5" class="techno__icon">
+                    <h3 class="title title__fz14 techno__wrap-title">HTML5</h3>
+                    <div class="title title__fz12 techno__wrap-descr">Именно он создает каркас вашего сайта или
+                        приложения, а пятая версия
+                        позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
+                </div>
+                <div class="techno__wrap">
+                    <img src="icons/skills/css3.svg" alt="css3" class="techno__icon">
+                    <h3 class="title title__fz14 techno__wrap-title">CSS3</h3>
+                    <div class="title title__fz12 techno__wrap-descr">Этот язык стилей позволяет мне создавать абсолютно
+                        любой внешний вид
+                        вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
+                </div>
+                <div class="techno__wrap">
+                    <img src="icons/skills/js.svg" alt="js" class="techno__icon">
+                    <h3 class="title title__fz14 techno__wrap-title">Java Script</h3>
+                    <div class="title title__fz12 techno__wrap-descr">Этот язык программирования позволяет оживить все
+                        что угодно:
+                        слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
+                </div>
+                <div class="techno__wrap">
+                    <img src="icons/skills/jquery.svg" alt="jquery" class="techno__icon">
+                    <h3 class="title title__fz14 techno__wrap-title">Jquery</h3>
+                    <div class="title title__fz12 techno__wrap-descr">Библиотека Jquery позволит ускорить разработку.
+                        Без необходимости
+                        интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
+                </div>
+                <div class="techno__wrap">
+                    <img src="icons/skills/react.svg" alt="react" class="techno__icon">
+                    <h3 class="title title__fz14 techno__wrap-title">React</h3>
+                    <div class="title title__fz12 techno__wrap-descr">Эта библиотека позволяет создавать web-приложения.
+                        Мы можем создать
+                        максимально интерактивный продукт именно под ваши цели</div>
+                </div>
+                <div class="techno__wrap">
+                    <img src="icons/skills/node.js.svg" alt="node" class="techno__icon">
+                    <h3 class="title title__fz14 techno__wrap-title">Node.js</h3>
+                    <div class="title title__fz12 techno__wrap-descr">Эта платформа позволяет создавать бэкенд для
+                        вашего продукта -
+                        “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
+                </div>
+                <div class="techno__wrap">
+                    <img src="icons/skills/mongo.db.svg" alt="mongo" class="techno__icon">
+                    <h3 class="title title__fz14 techno__wrap-title">Mongo.db</h3>
+                    <div class="title title__fz12 techno__wrap-descr">Это нереляционная база данных, которая будет
+                        хранить данные вашего
+                        сайта или приложения</div>
+                </div>
 
+            </div>
+        </div>
+
+    </section>
+    <!-- ! end techno -->
+
+
+    <script src="js/lang.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/script.js"></script>
 </body>
 
