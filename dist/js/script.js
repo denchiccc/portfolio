@@ -8,3 +8,10 @@ humburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+const percents = document.querySelectorAll('.techno__great-percent'),
+    lines = document.querySelectorAll('.techno__scale-min');
+
+percents.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
