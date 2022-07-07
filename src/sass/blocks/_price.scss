@@ -1,0 +1,23 @@
+.price {
+    padding-top: 60px;
+
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+
+        &::before {
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template: repeat(3, minmax(44px, auto)) / repeat(2, 366px);
+        grid-auto-rows: minmax(44px, auto);
+        justify-content: space-between;
+    }
+}
