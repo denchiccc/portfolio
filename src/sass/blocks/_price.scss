@@ -12,12 +12,58 @@
             transform: translate(-50%, -50%);
 
         }
+
+        @include after_circle_user;
+
+        &::after {
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 
     &__grid {
+        padding: 0px 50px 0px 50px;
+        margin-top: 91px;
         display: grid;
         grid-template: repeat(3, minmax(44px, auto)) / repeat(2, 366px);
         grid-auto-rows: minmax(44px, auto);
+        row-gap: 15px;
         justify-content: space-between;
+
+        &-wrap {
+            padding-left: 25px;
+            display: grid;
+            grid-template: repeat(2, 1fr) /
+                /* repeat(2, 1fr) */
+                186px 1fr;
+            grid-auto-rows: auto;
+
+
+            .price__descr {
+                grid-column: 1 / 3;
+
+            }
+        }
+    }
+
+    &__whatprice {
+        text-align: end;
+    }
+
+    &__services {
+        position: relative;
+        @include before_circle;
+
+        &::before {
+
+            width: 15px;
+            height: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            left: -25px;
+        }
+
     }
 }
