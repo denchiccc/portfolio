@@ -73,4 +73,16 @@ const langArr = {
         'en': 'Contacts',
 
     },
+    'anexperience': {
+        'ua': 'Досвід',
+        'ru': 'Опыт',
+        'en': 'An experience',
+
+    },
+    'useful': {
+        'ua': 'Чим я буду корисний',
+        'ru': 'Чем я буду полузен',
+        'en': 'How can i be useful',
+
+    },
 };

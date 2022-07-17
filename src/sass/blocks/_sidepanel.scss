@@ -8,6 +8,7 @@
     top: 220px;
     z-index: 3;
     transform: rotate(90deg);
+    transition: all 0.6;
 
     &__text {
         width: 145px;
@@ -33,8 +34,9 @@
             transform: rotate(-90deg);
         }
 
-        img:active {
-            transform: scale(1.2);
+        img:hover {
+            transform: scale(1.2) rotate(-90deg);
+
         }
     }
 }

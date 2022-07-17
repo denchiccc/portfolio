@@ -34,9 +34,7 @@
         &-wrap {
             padding-left: 25px;
             display: grid;
-            grid-template: repeat(2, 1fr) /
-                /* repeat(2, 1fr) */
-                186px 1fr;
+            grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto); // 186px 1fr;
             grid-auto-rows: auto;
 
 
