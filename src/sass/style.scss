@@ -12,7 +12,7 @@
 }
 
 .contianer {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -28,3 +28,5 @@
 @import 'blocks/portfolio';
 @import 'blocks/price';
 @import 'blocks/contacts';
+@import 'blocks/policy';
+@import 'blocks/media';

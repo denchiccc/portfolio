@@ -1,7 +1,7 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../img/promo.jpg') no-repeat 50%/cover;
+    background: url('../img/tgrey.jpg') no-repeat center/cover;
     padding-top: 205px;
 
     &__wraper {
@@ -23,10 +23,11 @@
         }
     }
 
-    .promo__subtitle {
+    &__subtitle {
         width: 532px;
         margin-top: 9px;
         margin-bottom: 25px;
+
     }
 
     &__link {
