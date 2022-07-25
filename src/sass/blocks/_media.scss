@@ -13,6 +13,20 @@
         max-width: 960px;
     }
 
+    .user__grid {
+        grid-template-columns: 400px 520px;
+        column-gap: 40px;
+    }
+
+    .user__skils {
+
+        grid-template-columns: repeat(2, 210px);
+    }
+
+    .user__skils_wrap {
+        padding-left: 20px;
+    }
+
 
 }
 
@@ -20,6 +34,23 @@
     .contianer {
         max-width: 720px;
     }
+
+    .user {
+        &__skils {
+            grid-template-columns: repeat(1, 350px);
+        }
+
+        &__grid {
+            grid-template-columns: 310px 380px;
+            column-gap: 30px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+
+
 
     .promo__subtitle {
         width: 400px;
@@ -31,7 +62,7 @@
 
 @media (max-width: 768px) {
     .contianer {
-        max-width: 540px;
+        max-width: 560px;
     }
 
     .promo__subtitle {
@@ -57,6 +88,22 @@
         top: 52px;
         right: 18px;
     }
+
+    .user {
+        padding-top: 40px;
+
+        &__grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 400px;
+            grid-template-areas: 'img''name''skils';
+        }
+
+        &__skils {
+            grid-template-columns: repeat(2, 210px)
+        }
+    }
+
+
 }
 
 @media (max-width: 576px) {
@@ -65,9 +112,36 @@
         padding: 0 15px;
     }
 
-    .promo__subtitle {
+    .promo {
+        background: url('../img/bg.jpg') no-repeat 57%/cover;
 
-        font-size: 26px;
-        line-height: 39px;
+        &__subtitle {
+
+            font-size: 26px;
+            line-height: 39px;
+            margin-bottom: 35px;
+        }
+    }
+
+    .menu__block {
+        width: 250px;
+        padding-left: 20px;
+    }
+
+    .menu__item {
+        ul {
+            padding: 0;
+        }
+    }
+
+    .user {
+        &__skils {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+
+        &__title {
+            font-size: 26px;
+        }
     }
 }
