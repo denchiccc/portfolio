@@ -13,19 +13,29 @@
         max-width: 960px;
     }
 
-    .user__grid {
-        grid-template-columns: 400px 520px;
-        column-gap: 40px;
+    .user {
+        &__grid {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+
+        &__skils {
+
+            grid-template-columns: repeat(2, 210px);
+        }
+
+        &__skils_wrap {
+            padding-left: 20px;
+        }
     }
 
-    .user__skils {
-
-        grid-template-columns: repeat(2, 210px);
+    .resume {
+        &__wrap {
+            grid-template-columns: repeat(2, 390px);
+            column-gap: 70px;
+        }
     }
 
-    .user__skils_wrap {
-        padding-left: 20px;
-    }
 
 
 }
@@ -57,6 +67,12 @@
         font-size: 40px;
         line-height: 50px;
 
+    }
+
+    .resume__wrap {
+        padding: 57px 65px 60px 28px;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, auto);
     }
 }
 
@@ -99,9 +115,28 @@
         }
 
         &__skils {
-            grid-template-columns: repeat(2, 210px)
+            grid-template-columns: repeat(2, 210px);
+
         }
     }
+
+    .resume {
+        padding-top: 70px;
+
+
+        &__wrap {
+            grid-template-columns: 500px;
+            row-gap: 35px;
+        }
+
+        &__subtitle {
+            font-size: 30px;
+        }
+    }
+
+
+
+
 
 
 }
@@ -141,6 +176,17 @@
         }
 
         &__title {
+            font-size: 26px;
+        }
+    }
+
+    .resume {
+        &__wrap {
+            padding: 57px 0px 60px 0px;
+            grid-template-columns: 1fr;
+        }
+
+        &__subtitle {
             font-size: 26px;
         }
     }
