@@ -31,7 +31,8 @@
 
     &__wrap {
         display: grid;
-        grid-template: repeat(2, 280px) / repeat(4, 280px);
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: repeat(2, 280px);
         grid-auto-rows: 280px;
         gap: 5px;
 
