@@ -55,6 +55,15 @@
         }
     }
 
+    .contacts {
+        &__grid {
+            grid-template-columns: 400px minmax(370px, 1fr);
+        }
+
+        &__btn {
+            font-size: 12px;
+        }
+    }
 
 }
 
@@ -118,6 +127,52 @@
             grid-template: repeat(3, minmax(44px, auto))/repeat(2, 275px);
             justify-content: space-between;
             margin-top: 60px;
+        }
+    }
+
+    .contacts {
+        padding: 80px 0 70px 0;
+
+        &__grid {
+            grid-template-columns: 350px 1fr;
+            column-gap: 70px;
+        }
+
+        &__trigers {
+            grid-template-columns: repeat(1, auto);
+            row-gap: 10px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__form {
+            display: block;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        &__sotial {
+            margin: 20px 0 20px 0;
+        }
+
+        &__input {
+            margin-bottom: 20px;
+            height: 40px;
+        }
+
+        &__textarea {
+            margin-bottom: 15px;
+
+            textarea {
+                height: 120px;
+            }
+
+        }
+
+        &__img {
+            width: 350px;
         }
     }
 
@@ -217,6 +272,19 @@
         }
     }
 
+    .contacts {
+        &__grid {
+            grid-template-columns: 400px;
+            grid-auto-rows: auto;
+            row-gap: 30px;
+            justify-content: center;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+
 
 }
 
@@ -310,5 +378,24 @@
             justify-content: center;
 
         }
+    }
+
+    .contacts {
+        padding: 60px 0px 40px 0px;
+
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+
+        &__img {
+            display: none;
+            height: 400px;
+        }
+
+        &__trigers {
+            grid-template-columns: repeat(1, 186px);
+            justify-items: center;
+        }
+
     }
 }
