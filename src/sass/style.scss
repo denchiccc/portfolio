@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .contianer {
     max-width: 1140px;
     margin: 0 auto;
@@ -21,6 +25,14 @@
     --color-green: #41873F;
     --color-ellow: #F7DF1E;
     --color-blue: #1d5eea;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
 }
 
 @import 'blocks/lang';
@@ -36,4 +48,5 @@
 @import 'blocks/price';
 @import 'blocks/contacts';
 @import 'blocks/policy';
+@import 'blocks/pugeup';
 @import 'blocks/media';
